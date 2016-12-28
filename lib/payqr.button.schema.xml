@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="payqr" platform="mysql" defaultEngine="MyISAM" phpdoc-package="payqr" version="1.1">
+    <object class="payqr_item_rows" table="payqr_items">
+        <field name="name" value="show_button"/>
+        <field name="htmltype" value="select"/>
+        <field name="htmlvalue" value="yes"/>
+        <field name="htmlpossiblevalues" value='{"yes":"Да", "no":"Нет"}'/>
+        <field name="description" value="Показывать на странице"/>
+        <field name="active" value="1"/>
+    </object>
+    <object class="payqr_item_rows" table="payqr_items">
+        <field name="name" value="button_color"/>
+        <field name="htmltype" value="select"/>
+        <field name="htmlvalue" value="default"/>
+        <field name="htmlpossiblevalues" value='{"default":"По умолчанию", "green":"Зеленый", "red":"Красный", "blue":"Синий", "orange": "Оранжевый"}'/>
+        <field name="description" value="Цвет кнопки"/>
+        <field name="active" value="1"/>
+    </object>
+    <object class="payqr_item_rows" table="payqr_items">
+        <field name="name" value="button_form"/>
+        <field name="htmltype" value="select"/>
+        <field name="htmlvalue" value="default"/>
+        <field name="htmlpossiblevalues" value='{"default":"По умолчанию", "sharp":"Без округления", "rude":"Минимальное округление", "soft":"Мягкое округление", "sleek":"Значительное округление", "oval":"Максимальное округление"}'/>
+        <field name="description" value="Форма кнопки"/>
+        <field name="active" value="1"/>
+    </object>
+    <object class="payqr_item_rows" table="payqr_items">
+        <field name="name" value="button_shadow"/>
+        <field name="htmltype" value="select"/>
+        <field name="htmlvalue" value="default"/>
+        <field name="htmlpossiblevalues" value='{"default":"По умолчанию", "shadow":"Включена", "noshadow":"Отключена"}'/>
+        <field name="description" value="Тень кнопки"/>
+        <field name="active" value="1"/>
+    </object>
+    <object class="payqr_item_rows" table="payqr_items">
+        <field name="name" value="button_gradient"/>
+        <field name="htmltype" value="select"/>
+        <field name="htmlvalue" value="default"/>
+        <field name="htmlpossiblevalues" value='{"default":"По умолчанию", "flat":"Отключен", "gradient":"Включен"}'/>
+        <field name="description" value="Градиент кнопки"/>
+        <field name="active" value="1"/>
+    </object>
+    <object class="payqr_item_rows" table="payqr_items">
+        <field name="name" value="button_text_trans"/>
+        <field name="htmltype" value="select"/>
+        <field name="htmlvalue" value="default"/>
+        <field name="htmlpossiblevalues" value='{"default":"По умолчанию", "small":"Мелко", "medium":"Средне", "large":"Крупно"}'/>
+        <field name="description" value="Размер шрифта"/>
+        <field name="active" value="1"/>
+    </object>
+    <object class="payqr_item_rows" table="payqr_items">
+        <field name="name" value="button_text_width"/>
+        <field name="htmltype" value="select"/>
+        <field name="htmlvalue" value="default"/>
+        <field name="htmlpossiblevalues" value='{"default":"По умолчанию", "normal":"Отключен", "bold":"Включен"}'/>
+        <field name="description" value="Жирный шрифт"/>
+        <field name="active" value="1"/>
+    </object>
+    <object class="payqr_item_rows" table="payqr_items">
+        <field name="name" value="button_text_case"/>
+        <field name="htmltype" value="select"/>
+        <field name="htmlvalue" value="default"/>
+        <field name="htmlpossiblevalues" value='{"default":"По умолчанию", "lowercase":"Нижний", "standartcase":"Стандартный", "uppercase":"Верхний"}'/>
+        <field name="description" value="Регистр текста"/>
+        <field name="active" value="1"/>
+    </object>
+    <object class="payqr_item_rows" table="payqr_items">
+        <field name="name" value="button_height"/>
+        <field name="htmltype" value="text"/>
+        <field name="htmlvalue" value="auto"/>
+        <field name="htmlpossiblevalues" value=""/>
+        <field name="description" value="Высота кнопки"/>
+        <field name="active" value="1"/>
+    </object>
+    <object class="payqr_item_rows" table="payqr_items">
+        <field name="name" value="button_width"/>
+        <field name="htmltype" value="text"/>
+        <field name="htmlvalue" value="auto"/>
+        <field name="htmlpossiblevalues" value=""/>
+        <field name="description" value="Ширина кнопки"/>
+        <field name="active" value="1"/>
+    </object>
+</model>

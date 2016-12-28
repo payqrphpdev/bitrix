@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="payqr" platform="mysql" defaultEngine="MyISAM" phpdoc-package="payqr" version="1.1">
+    <object class="payqr_item_rows" table="payqr_items">
+        <field name="name" value="merchant_id"/>
+        <field name="htmltype" value="text"/>
+        <field name="htmlvalue" value=""/>
+        <field name="htmlpossiblevalues" value=""/>
+        <field name="description" value="Номер магазина (MerchantID)"/>
+        <field name="active" value="1"/>
+    </object>
+    <object class="payqr_item_rows" table="payqr_items">
+        <field name="name" value="secret_key_in"/>
+        <field name="htmltype" value="text"/>
+        <field name="htmlvalue" value=""/>
+        <field name="htmlpossiblevalues" value=""/>
+        <field name="description" value="Входящий секретный ключ (SecretKeyIn)"/>
+        <field name="active" value="1"/>
+    </object>
+    <object class="payqr_item_rows" table="payqr_items">
+        <field name="name" value="secret_key_out"/>
+        <field name="htmltype" value="text"/>
+        <field name="htmlvalue" value=""/>
+        <field name="htmlpossiblevalues" value=""/>
+        <field name="description" value="Исходящий секретный ключ (SecretKeyOut)"/>
+        <field name="active" value="1"/>
+    </object>
+    <object class="payqr_item_rows" table="payqr_items">
+        <field name="name" value="hook_handler_url"/>
+        <field name="htmltype" value="text"/>
+        <field name="htmlvalue" value=""/>
+        <field name="htmlpossiblevalues" value=""/>
+        <field name="description" value="URL для уведомлений"/>
+        <field name="active" value="1"/>
+    </object>
+    <object class="payqr_item_rows" table="payqr_items">
+        <field name="name" value="log_url"/>
+        <field name="htmltype" value="text"/>
+        <field name="htmlvalue" value="payqr.log"/>
+        <field name="htmlpossiblevalues" value=""/>
+        <field name="description" value="URL PayQR логов"/>
+        <field name="active" value="1"/>
+    </object>
+</model>
